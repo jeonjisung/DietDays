@@ -11,7 +11,7 @@ class DateViewModel : ViewModel() {
     var dateInput = mutableStateOf("")
         private set
 
-    var dDayResult = mutableStateOf("")
+    var dDayResult = mutableStateOf("")2
         private set
 
     fun onDateInputChanged(newDate: String) {
