@@ -13,11 +13,11 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.SemanticsProperties.Text
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
@@ -53,7 +53,7 @@ fun MainScreen(viewModel: DateViewModel, navController: NavController) {
         OutlinedTextField(
             value = dateInput,
             onValueChange = { viewModel.onDateInputChanged(it) },
-            label = { TextField("Enter Date (yyyy-MM-dd)") },
+            label = { Text("Enter Date (yyyy-MM-dd)") },
             modifier = Modifier.fillMaxWidth()
         )
 
