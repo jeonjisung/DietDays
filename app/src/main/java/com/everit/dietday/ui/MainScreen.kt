@@ -17,7 +17,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.semantics.SemanticsProperties.Text
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
@@ -43,31 +42,32 @@ fun MainScreen(viewModel: DateViewModel, navController: NavController) {
     val dateInput by viewModel.dateInput
     val dDayResult by viewModel.dDayResult
 
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        OutlinedTextField(
-            value = dateInput,
-            onValueChange = { viewModel.onDateInputChanged(it) },
-            label = { Text("Enter Date (yyyy-MM-dd)") },
-            modifier = Modifier.fillMaxWidth()
-        )
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        Button(onClick = { viewModel.calculateDDay() }) {
-            Text("Calculate D-Day")
-        }
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        Text(
-            text = dDayResult,
-            style = MaterialTheme.typography.headlineMedium
-        )
-    }
+    // Test Code
+//    Column(
+//        modifier = Modifier
+//            .fillMaxSize()
+//            .padding(16.dp),
+//        verticalArrangement = Arrangement.Center,
+//        horizontalAlignment = Alignment.CenterHorizontally
+//    ) {
+//        OutlinedTextField(
+//            value = dateInput,
+//            onValueChange = { viewModel.onDateInputChanged(it) },
+//            label = { Text("Enter Date (yyyy-MM-dd)") },
+//            modifier = Modifier.fillMaxWidth()
+//        )
+//
+//        Spacer(modifier = Modifier.height(16.dp))
+//
+//        Button(onClick = { viewModel.calculateDDay() }) {
+//            Text("Calculate D-Day")
+//        }
+//
+//        Spacer(modifier = Modifier.height(16.dp))
+//
+//        Text(
+//            text = dDayResult,
+//            style = MaterialTheme.typography.headlineMedium
+//        )
+//    }
 }
