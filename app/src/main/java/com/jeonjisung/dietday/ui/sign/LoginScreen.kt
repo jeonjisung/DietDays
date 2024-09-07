@@ -1,4 +1,4 @@
-package com.everit.dietday.ui.sign
+package com.jeonjisung.dietday.ui.sign
 
 import androidx.compose.runtime.Composable
 

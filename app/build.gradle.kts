@@ -1,14 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+
+    // FireBase
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.everit.dietday"
+    namespace = "com.jeonjisung.dietday"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.everit.dietday"
+        applicationId = "com.jeonjisung.dietday"
         minSdk = 34
         targetSdk = 34
         versionCode = 1
@@ -66,4 +69,15 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    // Icon
+    implementation(libs.androidx.material.icons.extended)
+    implementation(libs.androidx.material)
+
+    // Foundation
+    implementation(libs.androidx.foundation)
+
+    // FireBase
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
 }

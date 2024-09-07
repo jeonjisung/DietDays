@@ -1,4 +1,4 @@
-package com.everit.dietday
+package com.jeonjisung.dietday
 
 import org.junit.Test
 

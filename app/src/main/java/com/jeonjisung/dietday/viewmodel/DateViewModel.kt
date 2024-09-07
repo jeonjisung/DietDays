@@ -1,4 +1,4 @@
-package com.everit.dietday.viewmodel
+package com.jeonjisung.dietday.viewmodel
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel

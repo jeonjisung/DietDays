@@ -11,7 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DietDay">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity">
+        </activity>
+        <activity
+            android:name=".ui.Splash.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.DietDay">
             <intent-filter>

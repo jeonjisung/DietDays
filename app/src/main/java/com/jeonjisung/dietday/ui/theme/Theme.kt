@@ -1,4 +1,4 @@
-package com.everit.dietday.ui.theme
+package com.jeonjisung.dietday.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
